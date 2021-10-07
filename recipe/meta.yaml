@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "1.0.3.1" %}
-{% set sha256 = "85c959cc71c8d9934b5ac8720251316342f205167fe654f05e260c2a381c6565" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "0aa7cd0208fce546288527d65e9f60aeaba1e07bc22a72677036bf2e244a93c4" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,6 @@ requirements:
     - cartopy
     - gdal
     - h5py
-    - ipyleaflet
     - lxml
     - matplotlib-base
     - netcdf4
