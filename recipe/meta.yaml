@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "1.0.6" %}
-{% set sha256 = "146d38cdba4a0def9dff32d590f92f57912cc259a42d0b222d9bcd6669250b24" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "eb11de006a7b6998ac272aeddd399ff1dbba1b10e1caa0284276089ef642ca01" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,6 @@ requirements:
     - setuptools-scm
     - setuptools
   run:
-    - cartopy
     - gdal
     - h5py
     - lxml
