@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "1.1.3" %}
-{% set sha256 = "30a4d280df8c83be196b4cdeb6fd9a35a5b9c15c20076dcb69176bc5d19302fc" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "28cb0056fe8fda13604d63de0ab97e540acb3878543395d2be445986c5c0af38" %}
 
 package:
   name: {{ name|lower }}
