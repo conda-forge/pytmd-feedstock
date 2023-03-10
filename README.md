@@ -1,11 +1,11 @@
-About pytmd
-===========
+About pytmd-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytmd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tsutterley/pyTMD
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytmd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tide Model Driver to read OTIS, GOT and FES formatted tidal solutions and make tidal predictions
 
