@@ -1,13 +1,13 @@
 {% set name = "pyTMD" %}
-{% set version = "2.1.8" %}
-{% set sha256 = "2bfd5e8428843937c6fbcf0fb023221f049ef4af8475a736d17e5736f4f890dc" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "b18aba6d2d78e69a17b3cf1937acc5524e8795af250e29585c920a5443c4af7d" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -24,12 +24,18 @@ requirements:
     - setuptools-scm
     - setuptools
   run:
+    - cartopy
     - gdal
     - h5py
+    - ipyleaflet
+    - ipywidgets
+    - jplephem
     - lxml
     - matplotlib-base
+    - mpi4py
     - netcdf4
     - numpy
+    - pandas
     - pyproj
     - python >=3.6
     - python-dateutil
