@@ -25,14 +25,11 @@ requirements:
     - setuptools
   run:
     - cartopy
-    - gdal
-    - h5py
     - ipyleaflet
     - ipywidgets
     - jplephem
     - lxml
     - matplotlib-base
-    - mpi4py
     - netcdf4
     - numpy
     - pandas
