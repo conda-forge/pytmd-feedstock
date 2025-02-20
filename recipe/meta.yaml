@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
@@ -52,7 +52,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/tsutterley/pyTMD
+  home: https://github.com/pyTMD/pyTMD
   summary: Tide Model Driver to read OTIS, GOT and FES formatted tidal solutions and make tidal predictions
   license: MIT
   license_file: LICENSE
@@ -61,7 +61,7 @@ about:
     tidal solutions for predicting ocean and load tides and can use IERS conventions
     for calculating radial pole tide displacements
   doc_url: https://pytmd.readthedocs.io/
-  dev_url: https://github.com/tsutterley/pyTMD
+  dev_url: https://github.com/pyTMD/pyTMD
 
 extra:
   recipe-maintainers:
