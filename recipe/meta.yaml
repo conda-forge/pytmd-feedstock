@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "3d1ffd86b3028f3bbf33f640d533aa8cbe0c418080c92021ea5e3936b72aafda" %}
+{% set version = "2.2.2" %}
+{% set sha256 = "075407402c6a81f8df6f9e23f60dfb35b68495ac27460fd887b27ab4b3944d3d" %}
 
 package:
   name: {{ name|lower }}
@@ -25,14 +25,11 @@ requirements:
     - setuptools
   run:
     - cartopy
-    - gdal
-    - h5py
     - ipyleaflet
     - ipywidgets
     - jplephem
     - lxml
     - matplotlib-base
-    - mpi4py
     - netcdf4
     - numpy
     - pandas
