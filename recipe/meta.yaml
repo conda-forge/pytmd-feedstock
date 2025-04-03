@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "2.2.2" %}
-{% set sha256 = "075407402c6a81f8df6f9e23f60dfb35b68495ac27460fd887b27ab4b3944d3d" %}
+{% set version = "2.2.3" %}
+{% set sha256 = "9a090061272a1d6f2ba98f5c1254757d6702c1cf92dbaf61c99db212938a43b9" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
