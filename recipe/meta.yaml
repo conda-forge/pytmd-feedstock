@@ -22,24 +22,29 @@ requirements:
     - setuptools
   run:
     - cartopy
+    - dask
+    - h5netcdf
     - ipyleaflet
     - ipywidgets
     - jplephem
     - jupyterlab
     - lxml
     - matplotlib-base
-    - netcdf4
     - numpy
+    - obstore
     - pandas
+    - pint
     - platformdirs
-    - pyproj
+    - pyarrow
+    - pyproj >=2.5.0
     - python >={{ python_min }}
-    - python-dateutil
     - pyyaml
+    - s3fs
     - scipy >=1.10.1
     - setuptools
     - timescale >=0.0.8
     - xarray
+    - zarr
 
 test:
   imports:
