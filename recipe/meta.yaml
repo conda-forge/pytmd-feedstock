@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "2.2.9" %}
-{% set sha256 = "e498a10c3cda21521eef3b2c3c2c7b128fdb93c071ed07f1a2b8ea13da8aaf65" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "53e1f15a0d27c398514805c274473dc89ccee383f1de1bba46c0376cca308c27" %}
 
 package:
   name: {{ name|lower }}
@@ -22,24 +22,29 @@ requirements:
     - setuptools
   run:
     - cartopy
+    - dask
+    - h5netcdf
     - ipyleaflet
     - ipywidgets
     - jplephem
     - jupyterlab
     - lxml
     - matplotlib-base
-    - netcdf4
     - numpy
+    - obstore
     - pandas
+    - pint
     - platformdirs
-    - pyproj
+    - pyarrow
+    - pyproj >=2.5.0
     - python >={{ python_min }}
-    - python-dateutil
     - pyyaml
+    - s3fs
     - scipy >=1.10.1
     - setuptools
     - timescale >=0.0.8
     - xarray
+    - zarr
 
 test:
   imports:
