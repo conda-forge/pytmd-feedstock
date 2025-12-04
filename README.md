@@ -7,15 +7,13 @@ Home: https://github.com/pyTMD/pyTMD
 
 Package license: MIT
 
-Summary: Tide Model Driver to read OTIS, GOT and FES formatted tidal solutions and make tidal predictions
+Summary: Python-based tidal prediction software
 
 Development: https://github.com/pyTMD/pyTMD
 
 Documentation: https://pytmd.readthedocs.io/
 
-Python-based tidal prediction software that reads OTIS, GOT and FES formatted
-tidal solutions for predicting ocean and load tides and can use IERS conventions
-for calculating radial pole tide displacements
+Python-based tidal prediction software for estimating ocean, load, solid Earth and pole tides
 
 
 Current build status
