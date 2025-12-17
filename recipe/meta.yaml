@@ -54,8 +54,6 @@ requirements:
 
 test:
   imports:
-    - dist
-    - doc
     - pyTMD
   commands:
     - pip check
