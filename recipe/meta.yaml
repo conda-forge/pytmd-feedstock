@@ -23,7 +23,7 @@ build:
     - gsfc_got_tides.py = pyTMD.datasets.fetch_gsfc_got:main
     - reduce_OTIS_files.py = pyTMD.datasets.reduce_otis:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
