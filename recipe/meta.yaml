@@ -71,7 +71,6 @@ test:
     - reduce_OTIS_files.py --help
   requires:
     - pip
-  requires:
     - python {{ python_min }}
 
 about:
