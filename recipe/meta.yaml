@@ -1,6 +1,6 @@
 {% set name = "pyTMD" %}
-{% set version = "2.2.9" %}
-{% set sha256 = "e498a10c3cda21521eef3b2c3c2c7b128fdb93c071ed07f1a2b8ea13da8aaf65" %}
+{% set version = "2.2.9.1" %}
+{% set sha256 = "51a56073b341ec2c5c08c7127d2ae178f740360c1725f15212d1ba6aba16ff99" %}
 
 package:
   name: {{ name|lower }}
@@ -11,15 +11,26 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  entry_points:
+    - fetch_arcticdata.py = pyTMD.datasets.fetch_arcticdata:main
+    - fetch_aviso_fes.py = pyTMD.datasets.fetch_aviso_fes:main
+    - fetch_gsfc_got.py = pyTMD.datasets.fetch_gsfc_got:main
+    - fetch_test_data.py = pyTMD.datasets.fetch_test_data:main
+    - reduce_otis.py = pyTMD.datasets.reduce_otis:main
+    - verify_box_tpxo.py = pyTMD.datasets.verify_box_tpxo:main
+    - arcticdata_tides.py = pyTMD.datasets.fetch_arcticdata:main
+    - aviso_fes_tides.py = pyTMD.datasets.fetch_aviso_fes:main
+    - gsfc_got_tides.py = pyTMD.datasets.fetch_gsfc_got:main
+    - reduce_OTIS_files.py = pyTMD.datasets.reduce_otis:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=64
   run:
     - cartopy
     - ipyleaflet
@@ -32,7 +43,7 @@ requirements:
     - numpy
     - pandas
     - platformdirs
-    - pyproj
+    - pyproj >=2.5.0
     - python >={{ python_min }}
     - python-dateutil
     - pyyaml
@@ -43,11 +54,24 @@ requirements:
 
 test:
   imports:
+    - dist
+    - doc
     - pyTMD
   commands:
     - pip check
+    - fetch_arcticdata.py --help
+    - fetch_aviso_fes.py --help
+    - fetch_gsfc_got.py --help
+    - fetch_test_data.py --help
+    - reduce_otis.py --help
+    - verify_box_tpxo.py --help
+    - arcticdata_tides.py --help
+    - aviso_fes_tides.py --help
+    - gsfc_got_tides.py --help
+    - reduce_OTIS_files.py --help
   requires:
     - pip
+  requires:
     - python {{ python_min }}
 
 about:
