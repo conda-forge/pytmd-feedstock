@@ -1,9 +1,9 @@
 schema_version: 1
 
 context:
-  name: "pyTMD"
-  version: "3.0.1"
-  sha256: "406dd374ea01e5eaadd0d504d55cbe074103705304ce7b4b69d273750af52be3"
+  name: pyTMD
+  version: 3.0.1
+  sha256: 406dd374ea01e5eaadd0d504d55cbe074103705304ce7b4b69d273750af52be3
 
 package:
   name: ${{ name|lower }}
@@ -26,6 +26,7 @@ build:
       - fetch_iers_opole.py = pyTMD.datasets.fetch_iers_opole:main
       - fetch_jpl_ssd.py = pyTMD.datasets.fetch_jpl_ssd:main
       - fetch_test_data.py = pyTMD.datasets.fetch_test_data:main
+      - verify_box_tpxo.py = pyTMD.tests.verify_box_tpxo:main
       - reduce_otis.py = pyTMD.datasets.reduce_otis:main
 
 requirements:
