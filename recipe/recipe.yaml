@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: pyTMD
-  version: 3.0.1
-  sha256: 406dd374ea01e5eaadd0d504d55cbe074103705304ce7b4b69d273750af52be3
+  version: "3.0.2"
+  sha256: be30efb92d67c61cfec0d458f28100e0cc2cc96f5ca24e6034d00b13aa7b2b45
 
 package:
   name: ${{ name|lower }}
@@ -22,11 +22,11 @@ build:
     entry_points:
       - fetch_arcticdata.py = pyTMD.datasets.fetch_arcticdata:main
       - fetch_aviso_fes.py = pyTMD.datasets.fetch_aviso_fes:main
+      - fetch_box_tpxo.py = pyTMD.datasets.fetch_box_tpxo:main
       - fetch_gsfc_got.py = pyTMD.datasets.fetch_gsfc_got:main
       - fetch_iers_opole.py = pyTMD.datasets.fetch_iers_opole:main
       - fetch_jpl_ssd.py = pyTMD.datasets.fetch_jpl_ssd:main
       - fetch_test_data.py = pyTMD.datasets.fetch_test_data:main
-      - verify_box_tpxo.py = pyTMD.datasets.verify_box_tpxo:main
       - reduce_otis.py = pyTMD.datasets.reduce_otis:main
 
 requirements:
@@ -67,12 +67,12 @@ tests:
       - pip check
       - fetch_arcticdata.py --help
       - fetch_aviso_fes.py --help
+      - fetch_box_tpxo.py --help
       - fetch_gsfc_got.py --help
       - fetch_iers_opole.py --help
       - fetch_jpl_ssd.py --help
       - fetch_test_data.py --help
       - reduce_otis.py --help
-      - verify_box_tpxo.py --help
 
 about:
   summary: Python-based tidal prediction software

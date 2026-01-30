@@ -13,7 +13,8 @@ Development: https://github.com/pyTMD/pyTMD
 
 Documentation: https://pytmd.readthedocs.io/
 
-Python-based tidal prediction software for estimating ocean, load, solid Earth and pole tides
+Python-based tidal prediction software for estimating ocean, load,
+solid Earth and pole tides
 
 Current build status
 ====================
