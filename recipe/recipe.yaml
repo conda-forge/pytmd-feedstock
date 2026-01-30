@@ -67,12 +67,12 @@ tests:
       - pip check
       - fetch_arcticdata.py --help
       - fetch_aviso_fes.py --help
+      - fetch_box_tpxo.py --help
       - fetch_gsfc_got.py --help
       - fetch_iers_opole.py --help
       - fetch_jpl_ssd.py --help
       - fetch_test_data.py --help
       - reduce_otis.py --help
-      - verify_box_tpxo.py --help
 
 about:
   summary: Python-based tidal prediction software
