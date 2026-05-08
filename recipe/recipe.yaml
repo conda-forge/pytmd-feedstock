@@ -32,7 +32,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=64
+    - setuptools >=77
     - pip
   run:
     - cartopy
@@ -51,7 +51,7 @@ requirements:
     - pyproj >=2.5.0
     - python >=${{ python_min }}
     - scipy >=1.10.1
-    - timescale >=0.0.8
+    - timescale >=0.1.1
     - xarray
 
 tests:
