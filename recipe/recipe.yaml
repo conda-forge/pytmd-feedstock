@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: pyTMD
-  version: "3.0.9"
-  sha256: 96f04ee2081ffb03f8e2a745ea386c35724e1db92848015bc20b481fb542ba51
+  version: "3.1.0"
+  sha256: f5986cee18c6a8b47654784fd90a3823d9917a117a17d65beb4279ade062a189
 
 package:
   name: ${{ name|lower }}
